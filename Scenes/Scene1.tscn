@@ -7,7 +7,7 @@
 [node name="World" type="Node2D"]
 
 [node name="Bush" type="Sprite2D" parent="."]
-position = Vector2(30, 32)
+position = Vector2(52, 25)
 texture = ExtResource("1_6rkit")
 
 [node name="Player" type="CharacterBody2D" parent="."]
