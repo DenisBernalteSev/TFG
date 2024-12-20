@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://di8nlafo8isxi"]
+
+[ext_resource type="Texture2D" uid="uid://fryo105gt7t" path="res://World/Bush.png" id="1_6rkit"]
+[ext_resource type="Texture2D" uid="uid://cja556bew2o2f" path="res://Player/Player.png" id="1_w2wwl"]
+[ext_resource type="Script" path="res://Player/Player.gd" id="2_36evr"]
+
+[node name="World" type="Node2D"]
+
+[node name="Bush" type="Sprite2D" parent="."]
+position = Vector2(30, 32)
+texture = ExtResource("1_6rkit")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(90, 58)
+script = ExtResource("2_36evr")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("1_w2wwl")
+hframes = 60
